@@ -12,12 +12,12 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
  */
 public class MySprite {
 
-	Texture asset;
-	Sprite sprite;
+	private Texture asset;
+	private Sprite sprite;
 	
-	float posX;
-	float posY;
-	float rotation;
+	private float posX;
+	private float posY;
+	private float rotation;
 	
 	MySprite() {
 		sprite = new Sprite();
@@ -85,5 +85,13 @@ public class MySprite {
 	public void setPosition(float x, float y) {
 		this.posX = x;
 		this.posY = y;
+	}
+	
+	/**
+	 * Rotate the sprite
+	 * @param rotation float : rotation in degrees
+	 */
+	public void rotate(float rotation) {
+		this.sprite.rotate(rotation);
 	}
 }

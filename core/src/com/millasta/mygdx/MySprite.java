@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
 /**
  * Custom class for the use of 2D single graphics
@@ -55,6 +56,14 @@ public class MySprite {
 	
 	public Sprite getSprite() {
 		return this.sprite;
+	}
+	
+	/**
+	 * Set the current texture of the sprite, keeping the same size. Works with animations
+	 * @param texture TextureRegion : the new texture to draw
+	 */
+	public void setTextureRegion(TextureRegion texture) {
+		sprite.setRegion(texture);
 	}
 	
 	/**

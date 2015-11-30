@@ -16,7 +16,6 @@ public class MyAnimation {
 	private static int FRAME_ROWS;
 	
 	private Texture animationSheet;
-	private TextureRegion currentFrame;
 	private TextureRegion[] animationFrames; 
 	private Animation animation;
 	

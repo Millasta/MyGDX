@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 /**
  * Custom class for the use of 2D single graphics
  * @author Millasta
- * This include all the possibilities of the LibGDX sprite class and the Animation one.
+ * This include all the possibilities of the LibGDX sprite class.
  */
 public class MySprite {
 
